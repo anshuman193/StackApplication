@@ -9,9 +9,8 @@
 import Foundation
 
 protocol Stack {
-    
+
     associatedtype ElementType
-    
     var peek: ElementType { get }
     mutating func push(element: ElementType)
     mutating func pop() -> ElementType?
@@ -20,17 +19,27 @@ protocol Stack {
 struct StringStack: Stack {
     
     var peek: String
+    
     private var stackArr = Array<String>()
     
     private func isEmpty() -> Bool {
+        
         return stackArr.count > 0 ? true:false
     }
-
+    
     mutating func push(element: String) {
         stackArr.append(element)
     }
 
     mutating func pop() -> String? {
-        return stackArr.popLast()
+        
+        if isEmpty() {
+            
+            print("Stack is empty")
+            return nil
+        } else {
+            
+            return stackArr.popLast()
+        }
     }
 }
