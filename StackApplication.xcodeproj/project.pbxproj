@@ -14,6 +14,7 @@
 		06E61DCF2355A424003C0A31 /* StackApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E61DCE2355A424003C0A31 /* StackApplicationTests.swift */; };
 		06E61DDA2355A424003C0A31 /* StackApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E61DD92355A424003C0A31 /* StackApplicationUITests.swift */; };
 		06E61DE82355A43E003C0A31 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E61DE72355A43E003C0A31 /* Stack.swift */; };
+		0F3CAFFF235C9265004501B0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3CAFFE235C9265004501B0 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		06E61DD92355A424003C0A31 /* StackApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackApplicationUITests.swift; sourceTree = "<group>"; };
 		06E61DDB2355A424003C0A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06E61DE72355A43E003C0A31 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		0F3CAFFE235C9265004501B0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				06E61DBB2355A41B003C0A31 /* AppDelegate.swift */,
 				06E61DBD2355A41B003C0A31 /* ViewController.swift */,
 				06E61DE72355A43E003C0A31 /* Stack.swift */,
+				0F3CAFFE235C9265004501B0 /* Item.swift */,
 				06E61DBF2355A424003C0A31 /* Assets.xcassets */,
 				06E61DC12355A424003C0A31 /* Main.storyboard */,
 				06E61DC42355A424003C0A31 /* Info.plist */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06E61DBE2355A41B003C0A31 /* ViewController.swift in Sources */,
+				0F3CAFFF235C9265004501B0 /* Item.swift in Sources */,
 				06E61DE82355A43E003C0A31 /* Stack.swift in Sources */,
 				06E61DBC2355A41B003C0A31 /* AppDelegate.swift in Sources */,
 			);
