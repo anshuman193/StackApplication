@@ -11,8 +11,7 @@ import AppKit
 
 class Item: NSCollectionViewItem {
     
-//    @IBOutlet var scribView: NSView!
-//    @IBOutlet var scribPrice: NSTextField!
+//    @IBOutlet var imageVw: NSImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

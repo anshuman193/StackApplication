@@ -716,14 +716,11 @@
                                     <rect key="frame" x="1" y="1" width="438" height="228"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView id="pxG-QR-MDG">
+                                        <collectionView selectable="YES" allowsMultipleSelection="YES" id="pxG-QR-MDG">
                                             <rect key="frame" x="0.0" y="0.0" width="438" height="158"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="h6v-xl-eA8">
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="Poi-7B-fv2">
                                                 <size key="itemSize" width="65" height="65"/>
-                                                <size key="headerReferenceSize" width="10" height="10"/>
-                                                <size key="footerReferenceSize" width="10" height="10"/>
-                                                <edgeInsets key="sectionInset" left="5" right="5" top="5" bottom="5"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
@@ -765,11 +762,26 @@
                     <view key="view" id="ltY-Ok-Vyv">
                         <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CkK-QW-P2U">
+                                <rect key="frame" x="4" y="8" width="57" height="49"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="IGP-F9-O94"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="CkK-QW-P2U" firstAttribute="centerX" secondItem="ltY-Ok-Vyv" secondAttribute="centerX" id="BE0-Cj-L7v"/>
+                            <constraint firstItem="CkK-QW-P2U" firstAttribute="centerY" secondItem="ltY-Ok-Vyv" secondAttribute="centerY" id="IDU-RR-eVR"/>
+                            <constraint firstItem="CkK-QW-P2U" firstAttribute="top" secondItem="ltY-Ok-Vyv" secondAttribute="top" constant="8" id="cVP-Vd-3Yo"/>
+                            <constraint firstItem="CkK-QW-P2U" firstAttribute="leading" secondItem="ltY-Ok-Vyv" secondAttribute="leading" constant="4" id="gvl-vR-GF5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="CkK-QW-P2U" id="IPf-KT-6lK"/>
+                    </connections>
                 </collectionViewItem>
                 <customObject id="the-kw-3n5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-260" y="627"/>
+            <point key="canvasLocation" x="-260.5" y="626.5"/>
         </scene>
     </scenes>
 </document>
