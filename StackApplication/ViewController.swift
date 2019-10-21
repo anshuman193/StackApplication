@@ -31,6 +31,7 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
     
     
     func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         return 10
     }
     
@@ -38,20 +39,10 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
     
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
         
-        
-        
         let item = self.storyboard?.instantiateController(withIdentifier: "collectionItem")
-            
-//            NSStoryboard.SceneIdentifier("collectionItem"))
         guard let scribItem = item as? Item else { return item as! NSCollectionViewItem }
-//        scribItem.scribView.wantsLayer = true
-//        scribItem.scribView.layer?.backgroundColor = NSColor.red.cgColor
-        
-
-
-//        let image = NSImage(contentsOf: photos[indexPath.item])
-//        pictureItem.imageView?.image = image
-
+        scribItem.view.wantsLayer = true
+        scribItem.view.layer?.backgroundColor = NSColor.red.cgColor
         return scribItem
     }
 }

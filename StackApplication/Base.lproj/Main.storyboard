@@ -721,6 +721,9 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="h6v-xl-eA8">
                                                 <size key="itemSize" width="65" height="65"/>
+                                                <size key="headerReferenceSize" width="10" height="10"/>
+                                                <size key="footerReferenceSize" width="10" height="10"/>
+                                                <edgeInsets key="sectionInset" left="5" right="5" top="5" bottom="5"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
