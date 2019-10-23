@@ -18,7 +18,7 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
         
         super.viewDidLoad()
         
-        collectionView.registerForDraggedTypes([NSPasteboard.PasteboardType(kUTTypeURL as String)])
+//        collectionView.registerForDraggedTypes([NSPasteboard.PasteboardType(kUTTypeURL as String)])
         collectionView.delegate = self
         // Do any additional setup after loading the view.
     }
@@ -32,7 +32,7 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
     
     func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 4
+        return 10
     }
     
     
@@ -41,8 +41,6 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
         
         let item = self.storyboard?.instantiateController(withIdentifier: "collectionItem")
         guard let scribItem = item as? Item else { return item as! NSCollectionViewItem }
-        scribItem.view.wantsLayer = true
-        scribItem.view.layer?.backgroundColor = NSColor.red.cgColor
         return scribItem
     }
 }
