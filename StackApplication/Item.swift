@@ -11,6 +11,9 @@ import AppKit
 
 class Item: NSCollectionViewItem {
     
+    @IBOutlet var scripName: NSTextField?
+    @IBOutlet var scripPrice: NSTextField?
+    
     let selectedBorderThickness: CGFloat = 3
     
     override var isSelected: Bool {
@@ -49,7 +52,7 @@ class Item: NSCollectionViewItem {
         super.viewDidLoad()
 
         view.wantsLayer = true
-        view.layer?.backgroundColor = CGColor.init(red: 0.5, green: 0.1, blue: 0.1, alpha: 0.9)
+//        view.layer?.backgroundColor = CGColor.init(red: 0.5, green: 0.1, blue: 0.1, alpha: 0.9)
         view.layer?.borderColor = NSColor.blue.cgColor
     }
 }

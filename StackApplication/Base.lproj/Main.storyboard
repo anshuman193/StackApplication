@@ -720,7 +720,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="658" height="458"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="Poi-7B-fv2">
-                                                <size key="itemSize" width="128" height="128"/>
+                                                <size key="itemSize" width="201" height="129"/>
                                                 <edgeInsets key="sectionInset" left="10" right="10" top="10" bottom="10"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -761,31 +761,49 @@
             <objects>
                 <collectionViewItem storyboardIdentifier="collectionItem" id="BBB-1x-8zf" customClass="Item" customModule="StackApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ltY-Ok-Vyv">
-                        <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                        <rect key="frame" x="0.0" y="0.0" width="201" height="129"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CkK-QW-P2U">
-                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSAdvanced" id="IGP-F9-O94"/>
-                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QrT-n0-5BH">
+                                <rect key="frame" x="-2" y="0.0" width="205" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="XKs-e7-0V0"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Scrip Price" drawsBackground="YES" id="fqQ-Wi-SqF">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KOm-7d-FSz">
+                                <rect key="frame" x="0.0" y="64" width="201" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="zBY-QB-ya9"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Scrip Name" drawsBackground="YES" id="CGU-uK-R9m">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="CkK-QW-P2U" secondAttribute="bottom" id="Izi-Oc-ZvE"/>
-                            <constraint firstItem="CkK-QW-P2U" firstAttribute="leading" secondItem="ltY-Ok-Vyv" secondAttribute="leading" id="a4k-6j-62U"/>
-                            <constraint firstItem="CkK-QW-P2U" firstAttribute="top" secondItem="ltY-Ok-Vyv" secondAttribute="top" id="gMd-kX-Gez"/>
-                            <constraint firstAttribute="trailing" secondItem="CkK-QW-P2U" secondAttribute="trailing" id="qUq-cN-zla"/>
+                            <constraint firstItem="KOm-7d-FSz" firstAttribute="centerX" secondItem="QrT-n0-5BH" secondAttribute="centerX" id="4fL-C8-XFf"/>
+                            <constraint firstAttribute="trailing" secondItem="KOm-7d-FSz" secondAttribute="trailing" id="4xy-wt-YuL"/>
+                            <constraint firstItem="KOm-7d-FSz" firstAttribute="top" secondItem="ltY-Ok-Vyv" secondAttribute="top" id="PYJ-wH-Lu7"/>
+                            <constraint firstAttribute="bottom" secondItem="QrT-n0-5BH" secondAttribute="bottom" id="n3L-v4-pnf"/>
+                            <constraint firstItem="QrT-n0-5BH" firstAttribute="leading" secondItem="ltY-Ok-Vyv" secondAttribute="leading" constant="-2" id="sma-l1-FUb"/>
+                            <constraint firstItem="KOm-7d-FSz" firstAttribute="leading" secondItem="ltY-Ok-Vyv" secondAttribute="leading" id="wGH-Qn-MFT"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="CkK-QW-P2U" id="IPf-KT-6lK"/>
+                        <outlet property="scripName" destination="KOm-7d-FSz" id="mGd-g4-vrr"/>
+                        <outlet property="scripPrice" destination="QrT-n0-5BH" id="pOa-sH-yLD"/>
                     </connections>
                 </collectionViewItem>
                 <customObject id="the-kw-3n5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-260.5" y="626.5"/>
+            <point key="canvasLocation" x="-328.5" y="658.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="NSAdvanced" width="32" height="32"/>
-    </resources>
 </document>
