@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15400"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -690,6 +690,23 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="654" y="588" width="500" height="300"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="D090BA6F-2849-4C0D-8FB5-E084F4FDF10B" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="eTI-fe-JGF">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="jT0-KO-aGY"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="vG8-31-Kvm"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="bK0-WP-DNo"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="aaq-gD-3oO"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="cTy-ra-JDW"/>
+                                <toolbarItem implicitItemIdentifier="1DB4C211-B2BB-42F9-9982-78AA9B9461C8" explicitItemIdentifier="Refresh" label="Refresh" paletteLabel="Refresh Item" tag="1" image="NSRefreshFreestandingTemplate" selectable="YES" id="S6G-tx-sIk">
+                                    <size key="minSize" width="14" height="14"/>
+                                    <size key="maxSize" width="14" height="14"/>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="S6G-tx-sIk"/>
+                                <toolbarItem reference="cTy-ra-JDW"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -700,7 +717,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="103"/>
+            <point key="canvasLocation" x="94" y="215"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -754,7 +771,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="168" y="531"/>
+            <point key="canvasLocation" x="187" y="897"/>
         </scene>
         <!--Item-->
         <scene sceneID="LF5-QA-BPz">
@@ -806,4 +823,7 @@
             <point key="canvasLocation" x="-328.5" y="658.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSRefreshFreestandingTemplate" width="14" height="14"/>
+    </resources>
 </document>
