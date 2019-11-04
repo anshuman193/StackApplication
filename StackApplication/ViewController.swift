@@ -43,5 +43,15 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
         guard let scribItem = item as? Item else { return item as! NSCollectionViewItem }
         return scribItem
     }
+    
+    @IBAction func refreshButtonClicked(sender: NSView) {
+        
+        print("refreshButtonClicked")
+    }
+    
+    @IBAction func addStockButtonClicked(sender: NSView) {
+        
+        print("addStockButtonClicked")
+    }
 }
 

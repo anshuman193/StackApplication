@@ -697,14 +697,23 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="bK0-WP-DNo"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="aaq-gD-3oO"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="cTy-ra-JDW"/>
-                                <toolbarItem implicitItemIdentifier="1DB4C211-B2BB-42F9-9982-78AA9B9461C8" explicitItemIdentifier="Refresh" label="Refresh" paletteLabel="Refresh Item" tag="1" image="NSRefreshFreestandingTemplate" selectable="YES" id="S6G-tx-sIk">
-                                    <size key="minSize" width="14" height="14"/>
-                                    <size key="maxSize" width="14" height="14"/>
+                                <toolbarItem implicitItemIdentifier="1DB4C211-B2BB-42F9-9982-78AA9B9461C8" explicitItemIdentifier="Refresh" label="Refresh" paletteLabel="Refresh Item" tag="1" image="NSRefreshFreestandingTemplate" sizingBehavior="auto" selectable="YES" id="S6G-tx-sIk">
+                                    <connections>
+                                        <action selector="refreshButtonClickedWithSender:" target="Oky-zY-oP4" id="56q-Wf-T3d"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="3F824D03-9DF9-45FF-B121-15A7BF497453" label="Add Stock" paletteLabel="AddStock" tag="-1" image="NSAddTemplate" id="GBu-uY-qe2">
+                                    <size key="minSize" width="11" height="11"/>
+                                    <size key="maxSize" width="11" height="11"/>
+                                    <connections>
+                                        <action selector="addStockButtonClickedWithSender:" target="Oky-zY-oP4" id="w34-2o-TpW"/>
+                                    </connections>
                                 </toolbarItem>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="S6G-tx-sIk"/>
                                 <toolbarItem reference="cTy-ra-JDW"/>
+                                <toolbarItem reference="GBu-uY-qe2"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>
@@ -824,6 +833,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
         <image name="NSRefreshFreestandingTemplate" width="14" height="14"/>
     </resources>
 </document>
