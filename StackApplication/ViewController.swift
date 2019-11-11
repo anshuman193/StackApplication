@@ -47,6 +47,8 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
     @IBAction func refreshButtonClicked(sender: NSView) {
         
         print("refreshButtonClicked")
+        let webSrv = WebServiceHandler()
+        webSrv.fetchData()
     }
     
     @IBAction func addStockButtonClicked(sender: NSView) {
